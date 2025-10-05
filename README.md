@@ -51,7 +51,7 @@ The API follows **RESTful principles** and includes comprehensive validation, er
 - Maven 3.6 or higher
 - Git
 
-### Installation
+## 1. Installation
 
 Clone the repository:
 ```bash

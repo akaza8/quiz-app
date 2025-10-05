@@ -57,8 +57,8 @@ public class QuizController {
 
     @PostMapping("/{quizId}/submit")
     @Operation(summary = "Submit answer and get score")
-    public ResponseEntity<ScoreResponse> submitAnswerRequest(@PathVariable Long quizID ,@Valid @RequestBody SubmitAnswerRequest request) {
-        ScoreResponse response=questionService.submitAnswer(quizID, request);
+    public ResponseEntity<ScoreResponse> submitAnswerRequest(@PathVariable Long quizId ,@Valid @RequestBody SubmitAnswerRequest request) {
+        ScoreResponse response=questionService.submitAnswer(quizId, request);
         return new ResponseEntity<>(response, HttpStatus.OK);
     }
 }
